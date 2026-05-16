@@ -1,0 +1,18 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: " Apps";
+    drun-display-format: "{icon}  {name}";
+    disable-history: false;
+    hover-select: true;
+
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+
+    terminal: "alacritty";
+    kb-move-front: "";
+    kb-clear-line: "Control+a";
+}
+
+@theme "~/.config/rofi/themes/sick.rasi"

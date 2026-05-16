@@ -1,0 +1,86 @@
+{
+  "layer": "top",
+  "pposition": "top",
+  "height": 30,
+
+  "modules-left": [
+    "tray"
+  ],
+
+  "modules-center": [
+    // "hyprland/window",
+    "clock"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "bluetooth",
+    "battery",
+    "custom/power"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}"
+  },
+
+  "hyprland/window": {
+    "max-length": 50
+  },
+
+  "pulseaudio": {
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰖁 Muted",
+    "tooltip": false,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+
+  "network": {
+    "format-wifi": "󰖩",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip": false,
+
+    "on-click": "alacritty --class impala -e impala"
+  },
+
+  "bluetooth": {
+    "format-on": "󰂯",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "tooltip": false,
+    "on-click": "alacritty --class bluetui -e bluetui"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+
+    "format": "󰁹 {capacity}%",
+    "format-warning": "󰂃 {capacity}%",
+    "format-critical": "󰂎 {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "exec": "~/.config/waybar/scripts/power-status.sh",
+    "interval": 2,
+    "return-type": "json",
+    "on-click": "~/.config/waybar/scripts/cycle-power.sh",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false
+  },
+
+  "tray": {
+    "spacing": 10
+  }
+}
