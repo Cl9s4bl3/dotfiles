@@ -1,7 +1,7 @@
 [
   {
     "label": "Logout",
-    "exec": "hyprctl dispatch exit",
+    "exec": "pkill hyprland",
     "icon": "/usr/share/nwg-bar/images/system-log-out.svg"
   },
   {

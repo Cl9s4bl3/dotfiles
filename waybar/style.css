@@ -17,7 +17,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: #000000;
+  color: #064b8b;
 }
 
 #clock,
@@ -25,8 +25,8 @@ window#waybar {
 #network,
 #bluetooth,
 #pulseaudio,
+#bluetooth,
 #tray,
-
 #custom-power {
   padding: 0 10px;
 }
@@ -53,8 +53,4 @@ window#waybar {
 
 #custom-power.powersave {
   color: #89b4fa;
-}
-
-#bluetooth {
-  margin: 1px
 }
