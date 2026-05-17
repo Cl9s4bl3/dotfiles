@@ -4,6 +4,7 @@
   "height": 30,
 
   "modules-left": [
+    "hyprland/workspaces",
     "tray"
   ],
 
@@ -21,7 +22,11 @@
   ],
 
   "hyprland/workspaces": {
-    "format": "{name}"
+    "format": "{name}",
+    "persistent-workspaces" : {
+      "1" : [],
+      "2" : []
+    }
   },
 
   "hyprland/window": {
@@ -76,7 +81,7 @@
   },
 
   "clock": {
-    "format": "{:%H:%M}",
+    "format": "{:%a %b %d %I:%M %p}",
     "tooltip": false
   },
 
