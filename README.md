@@ -3,6 +3,7 @@
 sudo pacman -S uwsm \
 alacritty \
 ttf-jetbrains-mono-nerd \
+noto-fonts-emoji \
 mako \
 rofi \
 waybar \
