@@ -11,6 +11,9 @@ local lower_volume = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
 local mute_toggle = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 local brightness_up = "~/.config/hypr/scripts/brightness.sh up"
 local brightness_down = "~/.config/hypr/scripts/brightness.sh down"
+local audio_next = "playerctl next"
+local audio_prev = "playerctl previous"
+local audio_play_pause = "playerctl play-pause"
 
 local terminal_button = "RETURN"
 local close_current_window_button = "W"
@@ -29,6 +32,10 @@ local volume_down_button = "XF86AudioLowerVolume"
 local volume_mute_toggle_button = "XF86AudioMute"
 local brightness_up_button = "XF86MonBrightnessUp"
 local brightness_down_button = "XF86MonBrightnessDown"
+local audio_next_button = "XF86AudioNext"
+local audio_prev_button = "XF86AudioPrev"
+local audio_play_button = "XF86AudioPlay"
+local audio_pause_button = "XF86AudioPause"
 
 hl.bind(mainButton .. " + " .. terminal_button, hl.dsp.exec_cmd(terminal))
 hl.bind(mainButton .. " + " .. close_current_window_button, hl.dsp.window.close())
@@ -47,6 +54,11 @@ hl.bind(volume_down_button, hl.dsp.exec_cmd(lower_volume))
 hl.bind(volume_mute_toggle_button, hl.dsp.exec_cmd(mute_toggle))
 hl.bind(brightness_up_button, hl.dsp.exec_cmd(brightness_up))
 hl.bind(brightness_down_button, hl.dsp.exec_cmd(brightness_down))
+hl.bind(audio_next_button, hl.dsp.exec_cmd(audio_next))
+hl.bind(audio_prev_button, hl.dsp.exec_cmd(audio_prev))
+hl.bind(audio_play_button, hl.dsp.exec_cmd(audio_play_pause))
+hl.bind(audio_pause_button, hl.dsp.exec_cmd(audio_play_pause))
+
 
 local function toggle_pop_window(width, height)
     local active = hl.get_active_window()
