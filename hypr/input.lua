@@ -4,8 +4,9 @@ hl.config({
 
         touchpad = {
             natural_scroll = true
-        }
-    }
+        },
+	accel_profile = "flat"
+    },
 })
 
 hl.gesture({
