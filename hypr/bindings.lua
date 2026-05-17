@@ -85,5 +85,5 @@ local function toggle_pop_window(width, height)
 end
 
 hl.bind(mainButton .. " + " .. pop_window_button, function ()
-    toggle_pop_window()
+    toggle_pop_window(1700, 1000)
 end)
