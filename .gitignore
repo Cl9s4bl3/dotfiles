@@ -14,3 +14,6 @@ yay/
 pavucontrol.ini
 user-dirs.dirs
 user-dirs.locale
+QtProject.conf
+mimeapps.list
+menus/

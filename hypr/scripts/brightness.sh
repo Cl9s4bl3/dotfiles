@@ -10,12 +10,12 @@ step=10%
 case "$1" in
   up)
     brightnessctl set +$step
-    notify-send "Brightness" "${percent}%"
+    swayosd-client --brightness +10
     ;;
 
   down)
     brightnessctl set $step-
-    notify-send "Brightness" "${percent}%"
+    swayosd-client --brightness -10
     ;;
 
   *)

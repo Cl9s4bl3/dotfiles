@@ -1,0 +1,56 @@
+window#osd {
+  border-radius: 999px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.95);
+  opacity: 1;
+}
+
+window#osd * {
+  opacity: 1;
+}
+
+/* container */
+window#osd #container {
+  margin: 16px;
+}
+
+/* icons + text */
+window#osd image,
+window#osd label {
+  color: white;
+}
+
+/* PROGRESS BAR BASE (empty track) */
+window#osd progressbar,
+window#osd segmentedprogress {
+  min-height: 6px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.25); /* faint track */
+  border: none;
+}
+
+/* trough (empty area) */
+window#osd trough {
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* FILLED PART (this is what changes) */
+window#osd progress {
+  border-radius: 999px;
+  background-color: white;
+}
+
+/* segmented version */
+window#osd segment {
+  margin-left: 8px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+window#osd segment.active {
+  background-color: white;
+}
+
+window#osd segment:first-child {
+  margin-left: 0;
+}
